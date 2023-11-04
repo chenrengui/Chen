@@ -1,2 +1,5 @@
 # Chen
 日常积累
+
+主要是swift的一些知识点
+包括网络请求的封装以及一些常用struck或者class的extension,里面添加一些常用的功能
