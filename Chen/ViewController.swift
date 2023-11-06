@@ -8,7 +8,11 @@
 import UIKit
 import SnapKit
 
-@objc enum WeekDay: Int {
+/**
+ swift的enum要想被oc调用只能声明为int相关类型,并且前面要加@objc
+ */
+
+@objc enum WeekDay: Int32 {
     case mon
     case tue
     case wed
