@@ -25,6 +25,7 @@
 		81A968272AD92DC300A5BE9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A968252AD92DC300A5BE9D /* Main.storyboard */; };
 		81A968292AD92DC400A5BE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A968282AD92DC400A5BE9D /* Assets.xcassets */; };
 		81A9682C2AD92DC400A5BE9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A9682A2AD92DC400A5BE9D /* LaunchScreen.storyboard */; };
+		81C376872AF88F51004C872F /* OCEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C376862AF88F51004C872F /* OCEnum.m */; };
 		81C9842D2ADE316E002DC7D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9842C2ADE316E002DC7D2 /* User.swift */; };
 		81D68AA12AD94AA700C44E3F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 81D68AA02AD94AA700C44E3F /* Moya */; };
 		81E4CD582ADD1BDD00B5461E /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4CD572ADD1BDD00B5461E /* NetworkAPI.swift */; };
@@ -46,6 +47,9 @@
 		81A968282AD92DC400A5BE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81A9682B2AD92DC400A5BE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81A9682D2AD92DC400A5BE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C376842AF88F51004C872F /* Chen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chen-Bridging-Header.h"; sourceTree = "<group>"; };
+		81C376852AF88F51004C872F /* OCEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCEnum.h; sourceTree = "<group>"; };
+		81C376862AF88F51004C872F /* OCEnum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCEnum.m; sourceTree = "<group>"; };
 		81C9842C2ADE316E002DC7D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		81E4CD572ADD1BDD00B5461E /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		81E4CD5A2ADD242600B5461E /* NetworkPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPlugin.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				81A9681F2AD92DC300A5BE9D /* AppDelegate.swift */,
 				81A968232AD92DC300A5BE9D /* ViewController.swift */,
 				81A84AC32AF5E79E0053E58E /* Note.swift */,
+				81C376852AF88F51004C872F /* OCEnum.h */,
+				81C376862AF88F51004C872F /* OCEnum.m */,
 				81C9842B2ADE315E002DC7D2 /* Models */,
 				81A553F02AE6541500BBE3CB /* Extension */,
 				81E4CD592ADD1C0300B5461E /* Network */,
@@ -112,6 +118,7 @@
 				81A968282AD92DC400A5BE9D /* Assets.xcassets */,
 				81A9682A2AD92DC400A5BE9D /* LaunchScreen.storyboard */,
 				81A9682D2AD92DC400A5BE9D /* Info.plist */,
+				81C376842AF88F51004C872F /* Chen-Bridging-Header.h */,
 			);
 			path = Chen;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 				TargetAttributes = {
 					81A9681B2AD92DC300A5BE9D = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -240,6 +248,7 @@
 				81E4CD5B2ADD242600B5461E /* NetworkPlugin.swift in Sources */,
 				814C26172AE0C591002D172C /* Version.swift in Sources */,
 				81C9842D2ADE316E002DC7D2 /* User.swift in Sources */,
+				81C376872AF88F51004C872F /* OCEnum.m in Sources */,
 				81A84AC42AF5E79E0053E58E /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,8 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 4RXZSJAU4M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Chen/Info.plist;
@@ -407,6 +418,8 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chen/Chen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -417,8 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 4RXZSJAU4M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Chen/Info.plist;
@@ -439,6 +454,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chen/Chen-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

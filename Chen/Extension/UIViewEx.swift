@@ -148,4 +148,9 @@ extension UIView {
     public func bottomOffset(_ offset: CGFloat) -> CGFloat {
         return self.bottom + offset
     }
+    
+    /// UIView.animate(withDuration: duration, animations: animations, completion: completion)
+    public func uiviewAnimate(_ duration: TimeInterval = 1.0,_ animations: @escaping (() -> Void), completion: ((Bool) -> Void)?) {
+        UIView.animate(withDuration: duration, animations: animations, completion: completion)
+    }
 }

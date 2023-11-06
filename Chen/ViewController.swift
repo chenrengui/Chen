@@ -8,12 +8,29 @@
 import UIKit
 import SnapKit
 
+@objc enum WeekDay: Int {
+    case mon
+    case tue
+    case wed
+    case thu
+    case fri
+    case sat
+    case sun
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        let s = Weaks(0)
+        switch s {
+        case WeaksSun:
+            print("")
+        default:
+            print("")
+        }
 //        Task {
 //            let model = await NetworkManager.request_async(.fetchUserInfo(), LoginModel.self)
 //            print("model=\(model ?? LoginModel())")
