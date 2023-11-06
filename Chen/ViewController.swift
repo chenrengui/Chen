@@ -79,3 +79,17 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    
+    /**
+     extension里面不能添加存储属性,只能添加计算属性
+     */
+    var a: String {
+        set {
+            print("\(newValue)")
+        }
+        get {
+            return "a"
+        }
+    }
+}
