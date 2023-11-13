@@ -24,9 +24,13 @@ import SnapKit
 
 class ViewController: UIViewController {
     
+    @aaaaaa<String> var b
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
+        print("\(b)")
         
         let s = Weaks(0)
         switch s {

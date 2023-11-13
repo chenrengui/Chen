@@ -17,6 +17,7 @@
 		8181785B2ADCCC1900F56D13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8181785A2ADCCC1900F56D13 /* SnapKit */; };
 		819761A42ADE8CCB003B863F /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 819761A32ADE8CCB003B863F /* NVActivityIndicatorView */; };
 		819773692ADFBA74008C43DE /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 819773682ADFBA74008C43DE /* CryptoSwift */; };
+		81A6B2132AFA20CF009FADA9 /* Wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6B2122AFA20CF009FADA9 /* Wrappers.swift */; };
 		81A7008B2AE7652600A22B06 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A7008A2AE7652600A22B06 /* ArrayEx.swift */; };
 		81A7008D2AE7675F00A22B06 /* StringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A7008C2AE7675F00A22B06 /* StringEx.swift */; };
 		81A84AC42AF5E79E0053E58E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A84AC32AF5E79E0053E58E /* Note.swift */; };
@@ -28,6 +29,7 @@
 		81C376872AF88F51004C872F /* OCEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C376862AF88F51004C872F /* OCEnum.m */; };
 		81C9842D2ADE316E002DC7D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9842C2ADE316E002DC7D2 /* User.swift */; };
 		81D68AA12AD94AA700C44E3F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 81D68AA02AD94AA700C44E3F /* Moya */; };
+		81E0609A2AFE001C0052B769 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 81E060992AFE001C0052B769 /* Reachability */; };
 		81E4CD582ADD1BDD00B5461E /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4CD572ADD1BDD00B5461E /* NetworkAPI.swift */; };
 		81E4CD5B2ADD242600B5461E /* NetworkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4CD5A2ADD242600B5461E /* NetworkPlugin.swift */; };
 		81E4CD5D2ADD244800B5461E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4CD5C2ADD244800B5461E /* NetworkManager.swift */; };
@@ -37,6 +39,7 @@
 /* Begin PBXFileReference section */
 		81373E2C2AF4A0380006B085 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		814C26162AE0C591002D172C /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		81A6B2122AFA20CF009FADA9 /* Wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrappers.swift; sourceTree = "<group>"; };
 		81A7008A2AE7652600A22B06 /* ArrayEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
 		81A7008C2AE7675F00A22B06 /* StringEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEx.swift; sourceTree = "<group>"; };
 		81A84AC32AF5E79E0053E58E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 				81D68AA12AD94AA700C44E3F /* Moya in Frameworks */,
 				812F73372ADD159D003F62A9 /* SwiftyJSON in Frameworks */,
 				8181785B2ADCCC1900F56D13 /* SnapKit in Frameworks */,
+				81E0609A2AFE001C0052B769 /* Reachability in Frameworks */,
 				819773692ADFBA74008C43DE /* CryptoSwift in Frameworks */,
 				814C261D2AE11D51002D172C /* HandyJSON in Frameworks */,
 			);
@@ -109,6 +113,7 @@
 				81A9681F2AD92DC300A5BE9D /* AppDelegate.swift */,
 				81A968232AD92DC300A5BE9D /* ViewController.swift */,
 				81A84AC32AF5E79E0053E58E /* Note.swift */,
+				81A6B2122AFA20CF009FADA9 /* Wrappers.swift */,
 				81C376852AF88F51004C872F /* OCEnum.h */,
 				81C376862AF88F51004C872F /* OCEnum.m */,
 				81C9842B2ADE315E002DC7D2 /* Models */,
@@ -169,6 +174,7 @@
 				814C26192AE0FE15002D172C /* ObjectMapper */,
 				814C261C2AE11D51002D172C /* HandyJSON */,
 				8114B5752AE2134000F5060D /* PKHUD */,
+				81E060992AFE001C0052B769 /* Reachability */,
 			);
 			productName = Chen;
 			productReference = 81A9681C2AD92DC300A5BE9D /* Chen.app */;
@@ -209,6 +215,7 @@
 				814C26182AE0FE15002D172C /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				814C261B2AE11D51002D172C /* XCRemoteSwiftPackageReference "HandyJSON" */,
 				8114B5742AE2134000F5060D /* XCRemoteSwiftPackageReference "PKHUD" */,
+				81E060982AFE001C0052B769 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = 81A9681D2AD92DC300A5BE9D /* Products */;
 			projectDirPath = "";
@@ -240,6 +247,7 @@
 				81373E2D2AF4A0380006B085 /* UIViewEx.swift in Sources */,
 				81A968242AD92DC300A5BE9D /* ViewController.swift in Sources */,
 				81A7008D2AE7675F00A22B06 /* StringEx.swift in Sources */,
+				81A6B2132AFA20CF009FADA9 /* Wrappers.swift in Sources */,
 				81A7008B2AE7652600A22B06 /* ArrayEx.swift in Sources */,
 				81A968202AD92DC300A5BE9D /* AppDelegate.swift in Sources */,
 				81E4CD5D2ADD244800B5461E /* NetworkManager.swift in Sources */,
@@ -556,6 +564,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		81E060982AFE001C0052B769 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -603,6 +619,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 81D68A9F2AD94AA700C44E3F /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		81E060992AFE001C0052B769 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E060982AFE001C0052B769 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
