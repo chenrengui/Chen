@@ -18,5 +18,16 @@ import Foundation
  -b:当page存在,且满了时,调用autoreleaseFullPage初始化一个新的page,然后调用add方法将对象添加至page栈中;
  -c:当page不存在时,调用autoreleaseNoPage创建一个hotPage,然后调用add方法将对象添加至page栈中;
  ④调用pop操作时,会传入一个值,这个值就是push操作的返回值,即哨兵pool_boundary的内存地址token.所以pop的内部实现就是根据token找到哨兵对象所处的page,然后使用objc_release释放token之前的对象,并把next指向正确的位置.
+ 
+ 
+ 2: KVO的底层实现原理
+ 
+ 假如我们对Person的实例对象的name(nsstring类型)属性进行kvo监测,Person类会利用runtime机制动态的生成该类的派生子类
+ NSKVONotifying_Person的类,该类继承于Person类,并把实例对象的isa指针指向该派生类.
+ 当修改name属性时,会调用Foundation的_NSSetObjectValueAndNotify函数,在这个函数内部实际调用了以下方法:
+ 1:调用willChangeValueForKey:
+ 2:父类原来的setter方法,_name=name
+ 3:didChangeValueForKey
+ 内部触发监听方法observeValueForKeyPath:ofObject:change:context:
   
  */
