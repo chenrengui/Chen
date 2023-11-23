@@ -29,5 +29,12 @@ import Foundation
  2:父类原来的setter方法,_name=name
  3:didChangeValueForKey
  内部触发监听方法observeValueForKeyPath:ofObject:change:context:
+ 
+ 
+ 3:weak指针原理
+ 
+ 
+ runtime维护了一个weak表,用于存储指向某个对象的所有weak指针.weak表其实是一个hash表以对象的地址为key,value是weak指针的地址的数组.
+ 当一个对象的引用计数为0时,假如该对象的地址为a,则以a为key,搜索weak表中所有a为键的weak对象,从而置为nil.
   
  */
